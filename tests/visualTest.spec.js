@@ -53,13 +53,19 @@ async function compareScreenshots(baselinePath, currentPath, diffPath) {
   }
 
   const diff = new PNG({ width: img1.width, height: img1.height });
+
+  // Use `pixelmatch` with custom options to differentiate prod and staging
   const mismatchedPixels = pixelmatch(
     img1.data,
     img2.data,
     diff.data,
     img1.width,
     img1.height,
-    { threshold: 0.1 }
+    {
+      threshold: 0.1,
+      diffColor: [0, 0, 255], // Blue for prod (customize if needed)
+      diffColorAlt: [255, 165, 0], // Orange for staging (customize if needed)
+    }
   );
   fs.writeFileSync(diffPath, PNG.sync.write(diff));
 
@@ -107,8 +113,8 @@ function generateHtmlReport(results, deviceName) {
   const reportPath = `visual_comparison_report_${deviceName}.html`;
   const now = new Date().toLocaleString();
   const environments = `
-    <a href="${config.staging.baseUrl}" target="_blank">Staging: ${config.staging.baseUrl}</a>,
-    <a href="${config.prod.baseUrl}" target="_blank">Prod: ${config.prod.baseUrl}</a>
+    <a href="${config.staging.baseUrl}" target="_blank" style="color: rgb(255, 165, 0); font-weight: bold;">Staging</a>,
+    <a href="${config.prod.baseUrl}" target="_blank" style="color: rgb(0, 0, 255); font-weight: bold;">Prod</a>
   `;
 
   let htmlContent = `
@@ -126,7 +132,11 @@ function generateHtmlReport(results, deviceName) {
         .pass { color: green; font-weight: bold; }
         .fail { color: red; font-weight: bold; }
         .error { color: orange; font-weight: bold; }
-        img { max-width: 150px; cursor: pointer; }
+        img { max-width: 150px; cursor: pointer; margin: 5px; }
+        .staging { color: rgb(255, 165, 0); font-weight: bold; }
+        .prod { color: rgb(0, 0, 255); font-weight: bold; }
+        .thumbnail-wrapper { display: inline-block; text-align: center; margin: 5px; }
+        .thumbnail-label { font-size: 12px; font-weight: bold; margin-top: 5px; }
       </style>
     </head>
     <body>
@@ -160,13 +170,21 @@ function generateHtmlReport(results, deviceName) {
             <th>Page</th>
             <th>Similarity</th>
             <th>Status</th>
-            <th>Thumbnail</th>
+            <th>Thumbnails</th>
           </tr>
         </thead>
         <tbody>
   `;
 
   results.forEach((result) => {
+    const stagingThumbnailPath = `screenshots/${deviceName}/staging/${result.pagePath.replace(
+      /\//g,
+      "_"
+    )}.png`;
+    const prodThumbnailPath = `screenshots/${deviceName}/prod/${result.pagePath.replace(
+      /\//g,
+      "_"
+    )}.png`;
     const diffThumbnailPath = `screenshots/${deviceName}/diff/${result.pagePath.replace(
       /\//g,
       "_"
@@ -184,8 +202,8 @@ function generateHtmlReport(results, deviceName) {
     htmlContent += `
       <tr>
         <td>
-          <a href="${stagingUrl}" target="_blank">Staging</a> |
-          <a href="${prodUrl}" target="_blank">Prod</a>
+          <a href="${stagingUrl}" target="_blank" class="staging">Staging</a> |
+          <a href="${prodUrl}" target="_blank" class="prod">Prod</a>
         </td>
         <td>${
           typeof result.similarityPercentage === "number"
@@ -199,11 +217,32 @@ function generateHtmlReport(results, deviceName) {
         ? "Pass"
         : "Fail"
     }</td>
-        <td>${
-          fs.existsSync(diffThumbnailPath)
-            ? `<a href="${diffThumbnailPath}" target="_blank"><img src="${diffThumbnailPath}" /></a>`
-            : "N/A"
-        }</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            ${
+              fs.existsSync(stagingThumbnailPath)
+                ? `<a href="${stagingThumbnailPath}" target="_blank"><img src="${stagingThumbnailPath}" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>`
+                : "N/A"
+            }
+          </div>
+          <div class="thumbnail-wrapper">
+            ${
+              fs.existsSync(prodThumbnailPath)
+                ? `<a href="${prodThumbnailPath}" target="_blank"><img src="${prodThumbnailPath}" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>`
+                : "N/A"
+            }
+          </div>
+          <div class="thumbnail-wrapper">
+            ${
+              fs.existsSync(diffThumbnailPath)
+                ? `<a href="${diffThumbnailPath}" target="_blank"><img src="${diffThumbnailPath}" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>`
+                : "N/A"
+            }
+          </div>
+        </td>
       </tr>
     `;
   });
@@ -221,6 +260,7 @@ function generateHtmlReport(results, deviceName) {
 
 // Main Test Suite
 test.describe("Visual Comparison Tests", () => {
+  test.setTimeout(3600000);
   test("Compare staging and prod screenshots and generate HTML report", async ({
     browser,
   }) => {

@@ -13,21 +13,25 @@
         .pass { color: green; font-weight: bold; }
         .fail { color: red; font-weight: bold; }
         .error { color: orange; font-weight: bold; }
-        img { max-width: 150px; cursor: pointer; }
+        img { max-width: 150px; cursor: pointer; margin: 5px; }
+        .staging { color: rgb(255, 165, 0); font-weight: bold; }
+        .prod { color: rgb(0, 0, 255); font-weight: bold; }
+        .thumbnail-wrapper { display: inline-block; text-align: center; margin: 5px; }
+        .thumbnail-label { font-size: 12px; font-weight: bold; margin-top: 5px; }
       </style>
     </head>
     <body>
       <h1>Visual Comparison Report</h1>
       <h2>Device: Desktop</h2>
       <div class="summary">
-        <p>Total Pages Tested: 1</p>
-        <p>Passed: 1</p>
+        <p>Total Pages Tested: 111</p>
+        <p>Passed: 111</p>
         <p>Failed: 0</p>
         <p>Errors: 0</p>
-        <p>Last Run: 1/23/2025, 8:37:01 AM</p>
+        <p>Last Run: 1/27/2025, 1:22:16 PM</p>
         <p>Environments Tested: 
-    <a href="https://live-web-uis.pantheonsite.io/" target="_blank">Staging: https://live-web-uis.pantheonsite.io/</a>,
-    <a href="https://onlinecbm.uis.edu/" target="_blank">Prod: https://onlinecbm.uis.edu/</a>
+    <a href="https://live-web-uis.pantheonsite.io" target="_blank" style="color: rgb(255, 165, 0); font-weight: bold;">Staging</a>,
+    <a href="https://onlinecbm.uis.edu" target="_blank" style="color: rgb(0, 0, 255); font-weight: bold;">Prod</a>
   </p>
       </div>
       <table>
@@ -36,19 +40,2562 @@
             <th>Page</th>
             <th>Similarity</th>
             <th>Status</th>
-            <th>Thumbnail</th>
+            <th>Thumbnails</th>
           </tr>
         </thead>
         <tbody>
   
       <tr>
         <td>
-          <a href="https://live-web-uis.pantheonsite.io//" target="_blank">Staging</a> |
-          <a href="https://onlinecbm.uis.edu//" target="_blank">Prod</a>
+          <a href="https://live-web-uis.pantheonsite.io/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/" target="_blank" class="prod">Prod</a>
         </td>
         <td>100.00%</td>
         <td class="pass">Pass</td>
-        <td><a href="screenshots/Desktop/diff/_.png" target="_blank"><img src="screenshots/Desktop/diff/_.png" /></a></td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_.png" target="_blank"><img src="screenshots/Desktop/staging/_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_.png" target="_blank"><img src="screenshots/Desktop/prod/_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_.png" target="_blank"><img src="screenshots/Desktop/diff/_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/about/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/about/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_about_.png" target="_blank"><img src="screenshots/Desktop/staging/_about_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_about_.png" target="_blank"><img src="screenshots/Desktop/prod/_about_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_about_.png" target="_blank"><img src="screenshots/Desktop/diff/_about_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/academic-calendar/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/academic-calendar/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_academic-calendar_.png" target="_blank"><img src="screenshots/Desktop/staging/_academic-calendar_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_academic-calendar_.png" target="_blank"><img src="screenshots/Desktop/prod/_academic-calendar_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_academic-calendar_.png" target="_blank"><img src="screenshots/Desktop/diff/_academic-calendar_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/accreditations-accolades/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/accreditations-accolades/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_accreditations-accolades_.png" target="_blank"><img src="screenshots/Desktop/staging/_accreditations-accolades_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_accreditations-accolades_.png" target="_blank"><img src="screenshots/Desktop/prod/_accreditations-accolades_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_accreditations-accolades_.png" target="_blank"><img src="screenshots/Desktop/diff/_accreditations-accolades_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/admissions/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/admissions/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_admissions_.png" target="_blank"><img src="screenshots/Desktop/staging/_admissions_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_admissions_.png" target="_blank"><img src="screenshots/Desktop/prod/_admissions_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_admissions_.png" target="_blank"><img src="screenshots/Desktop/diff/_admissions_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/apply/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/apply/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_apply_.png" target="_blank"><img src="screenshots/Desktop/staging/_apply_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_apply_.png" target="_blank"><img src="screenshots/Desktop/prod/_apply_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_apply_.png" target="_blank"><img src="screenshots/Desktop/diff/_apply_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/articles/page/2/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/articles/page/2/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/staging/_articles_page_2_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/prod/_articles_page_2_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/diff/_articles_page_2_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.90%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/articles/page/2/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/articles/page/2/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_articles_page_2_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_articles_page_2_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_articles_page_2_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_articles_page_2_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/applied-finance-cert/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/applied-finance-cert/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_applied-finance-cert_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_applied-finance-cert_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_applied-finance-cert_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_applied-finance-cert_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_applied-finance-cert_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_applied-finance-cert_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/data-analytics-in-accounting/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/data-analytics-in-accounting/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_data-analytics-in-accounting_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/healthcare-mgmt/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/healthcare-mgmt/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_healthcare-mgmt_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_healthcare-mgmt_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_healthcare-mgmt_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/human-resource-managment/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/human-resource-managment/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_human-resource-managment_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_human-resource-managment_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_human-resource-managment_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_human-resource-managment_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_human-resource-managment_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_human-resource-managment_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/graduate-certificates/supply-chain-operations-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/graduate-certificates/supply-chain-operations-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_graduate-certificates_supply-chain-operations-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.79%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/finance/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/finance/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_finance_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_finance_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_finance_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_finance_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_finance_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_finance_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/finance/behavioral-finance-for-financial-planning/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/finance/behavioral-finance-for-financial-planning/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.87%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_finance_behavioral-finance-for-financial-planning_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/finance/impact-of-generative-ai/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/finance/impact-of-generative-ai/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.64%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_finance_impact-of-generative-ai_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_finance_impact-of-generative-ai_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_finance_impact-of-generative-ai_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_finance_impact-of-generative-ai_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_finance_impact-of-generative-ai_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_finance_impact-of-generative-ai_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/finance/personal-finance-and-financial-psychology-making-positive-financial-decisions/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/finance/personal-finance-and-financial-psychology-making-positive-financial-decisions/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.90%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_finance_personal-finance-and-financial-psychology-making-positive-financial-decisions_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/finance/types-of-digital-currency/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/finance/types-of-digital-currency/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.75%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_finance_types-of-digital-currency_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_finance_types-of-digital-currency_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_finance_types-of-digital-currency_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_finance_types-of-digital-currency_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_finance_types-of-digital-currency_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_finance_types-of-digital-currency_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/healthcare-informatics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/healthcare-informatics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/healthcare-informatics/careers/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/healthcare-informatics/careers/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_careers_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_careers_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_careers_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_careers_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_careers_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_careers_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/healthcare-informatics/fda-approval-process/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/healthcare-informatics/fda-approval-process/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_healthcare-informatics_fda-approval-process_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/hr-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/hr-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_hr-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_hr-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_hr-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_hr-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_hr-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_hr-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/hr-management/future-of-human-resources/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/hr-management/future-of-human-resources/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.79%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_hr-management_future-of-human-resources_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_hr-management_future-of-human-resources_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_hr-management_future-of-human-resources_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_hr-management_future-of-human-resources_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_hr-management_future-of-human-resources_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_hr-management_future-of-human-resources_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/hr-management/masters-degree-human-resources/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/hr-management/masters-degree-human-resources/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.64%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_hr-management_masters-degree-human-resources_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/hr-management/strategic-human-resource-planning-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/hr-management/strategic-human-resource-planning-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.74%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_hr-management_strategic-human-resource-planning-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/masters/hr-management/strategic-planning-for-hr-managers/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/masters/hr-management/strategic-planning-for-hr-managers/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.93%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_masters_hr-management_strategic-planning-for-hr-managers_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.90%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/accounting-data-analytics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/accounting-data-analytics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/accounting-data-analytics/accounting-data-analytics-careers/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/accounting-data-analytics/accounting-data-analytics-careers/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.73%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_accounting-data-analytics-careers_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/accounting-data-analytics/business-intelligence-trends/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/accounting-data-analytics/business-intelligence-trends/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_business-intelligence-trends_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/accounting-data-analytics/preparing-for-the-cpa-exam/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/accounting-data-analytics/preparing-for-the-cpa-exam/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.82%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_accounting-data-analytics_preparing-for-the-cpa-exam_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/applied-finance/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/applied-finance/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/applied-finance/career-paths-for-mba-in-applied-finance-graduates/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/applied-finance/career-paths-for-mba-in-applied-finance-graduates/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_career-paths-for-mba-in-applied-finance-graduates_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/applied-finance/current-trends-in-finance-field/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/applied-finance/current-trends-in-finance-field/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.79%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_current-trends-in-finance-field_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/applied-finance/personal-finance-considerations-for-small-businesses/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/applied-finance/personal-finance-considerations-for-small-businesses/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_applied-finance_personal-finance-considerations-for-small-businesses_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/business-analytics-program/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/business-analytics-program/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/business-analytics-program/business-intelligence-is-transforming-industries/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/business-analytics-program/business-intelligence-is-transforming-industries/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_business-intelligence-is-transforming-industries_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/business-analytics-program/ethical-practices-business-analytics-professionals/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/business-analytics-program/ethical-practices-business-analytics-professionals/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_business-analytics-program_ethical-practices-business-analytics-professionals_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-administration-program/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-administration-program/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-administration-program_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-administration-program_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-administration-program_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-administration-program_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-administration-program_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-administration-program_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-administration-program/manager-responsibilities/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-administration-program/manager-responsibilities/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-administration-program_manager-responsibilities_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-management-program/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-management-program/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-management-program/cybersecurity-experts-chatgpt-vulnerability-detection/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-management-program/cybersecurity-experts-chatgpt-vulnerability-detection/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_cybersecurity-experts-chatgpt-vulnerability-detection_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-management-program/what-jobs-can-i-get/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-management-program/what-jobs-can-i-get/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_what-jobs-can-i-get_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/cybersecurity-management-program/why-go-online/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/cybersecurity-management-program/why-go-online/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.84%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_cybersecurity-management-program_why-go-online_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/general/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/general/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_general_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_general_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_general_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_general_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_general_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_general_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/general/investing-101-mba-grads/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/general/investing-101-mba-grads/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_general_investing-101-mba-grads_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_general_investing-101-mba-grads_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_general_investing-101-mba-grads_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_general_investing-101-mba-grads_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_general_investing-101-mba-grads_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_general_investing-101-mba-grads_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/general/why-earn-an-mba-degree/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/general/why-earn-an-mba-degree/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_general_why-earn-an-mba-degree_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_general_why-earn-an-mba-degree_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_general_why-earn-an-mba-degree_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_general_why-earn-an-mba-degree_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_general_why-earn-an-mba-degree_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_general_why-earn-an-mba-degree_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/general/work-from-home-as-manager/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/general/work-from-home-as-manager/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_general_work-from-home-as-manager_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_general_work-from-home-as-manager_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_general_work-from-home-as-manager_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_general_work-from-home-as-manager_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_general_work-from-home-as-manager_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_general_work-from-home-as-manager_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-analytics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-analytics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-analytics/essential-analytical-skills/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-analytics/essential-analytical-skills/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_essential-analytical-skills_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-analytics/precision-medicine-and-ai/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-analytics/precision-medicine-and-ai/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-analytics_precision-medicine-and-ai_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-management/health-equity-policy-and-advocacy/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-management/health-equity-policy-and-advocacy/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.77%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_health-equity-policy-and-advocacy_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-management/marketing-meets-healthcare-mgmt/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-management/marketing-meets-healthcare-mgmt/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.87%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_marketing-meets-healthcare-mgmt_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/healthcare-management/patient-care-effective-operations-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/healthcare-management/patient-care-effective-operations-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.72%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_healthcare-management_patient-care-effective-operations-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/human-resources/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/human-resources/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_human-resources_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_human-resources_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_human-resources_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_human-resources_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_human-resources_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_human-resources_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/human-resources/impact-covid-19-recruitment-talent-acquisition/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/human-resources/impact-covid-19-recruitment-talent-acquisition/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_human-resources_impact-covid-19-recruitment-talent-acquisition_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/it-project-management-program/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/it-project-management-program/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/it-project-management-program/career-opportunities-information-technology/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/it-project-management-program/career-opportunities-information-technology/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_career-opportunities-information-technology_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/it-project-management-program/strategic-planning/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/it-project-management-program/strategic-planning/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_strategic-planning_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_it-project-management-program_strategic-planning_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_strategic-planning_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_it-project-management-program_strategic-planning_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_strategic-planning_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_it-project-management-program_strategic-planning_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/operations-supply-chain-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/operations-supply-chain-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_operations-supply-chain-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_operations-supply-chain-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_operations-supply-chain-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_operations-supply-chain-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_operations-supply-chain-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_operations-supply-chain-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/operations-supply-chain-management/impact-natural-resources-supply-chain/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/operations-supply-chain-management/impact-natural-resources-supply-chain/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_operations-supply-chain-management_impact-natural-resources-supply-chain_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/process-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/process-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_process-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_process-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_process-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_process-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_process-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_process-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/business/mba/process-management/project-management-and-process-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/business/mba/process-management/project-management-and-process-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_business_mba_process-management_project-management-and-process-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_business_mba_process-management_project-management-and-process-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_business_mba_process-management_project-management-and-process-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_business_mba_process-management_project-management-and-process-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_business_mba_process-management_project-management-and-process-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_business_mba_process-management_project-management-and-process-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.92%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/business-analytics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/business-analytics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-analytics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-analytics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-analytics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-analytics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-analytics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-analytics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/business-applications-of-ai/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/business-applications-of-ai/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-applications-of-ai_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/business-process-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/business-process-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-process-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_business-process-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-process-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_business-process-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-process-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_business-process-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/cybersecurity-administration/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/cybersecurity-administration/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-administration_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/cybersecurity-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/cybersecurity-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/cybersecurity-policy/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/cybersecurity-policy/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_cybersecurity-policy_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/digital-forensics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/digital-forensics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_digital-forensics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_digital-forensics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_digital-forensics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_digital-forensics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_digital-forensics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_digital-forensics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/health-information-privacy-and-security/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/health-information-privacy-and-security/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_health-information-privacy-and-security_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/healthcare-analytics-cert/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/healthcare-analytics-cert/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_healthcare-analytics-cert_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/it-project-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/it-project-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_it-project-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_it-project-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_it-project-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_it-project-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_it-project-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_it-project-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/graduate-certificate/project-management-for-healthcare-informatics/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/graduate-certificate/project-management-for-healthcare-informatics/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_graduate-certificate_project-management-for-healthcare-informatics_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-cybersecurity-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-cybersecurity-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-cybersecurity-management/incident-response-for-cyberattacks/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-cybersecurity-management/incident-response-for-cyberattacks/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.77%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_incident-response-for-cyberattacks_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-cybersecurity-management/jobs-cybersecurity-degree/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-cybersecurity-management/jobs-cybersecurity-degree/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.90%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_jobs-cybersecurity-degree_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-cybersecurity-management/network-security/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-cybersecurity-management/network-security/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_network-security_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-cybersecurity-management_network-security_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_network-security_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-cybersecurity-management_network-security_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_network-security_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-cybersecurity-management_network-security_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.92%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/articles/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/articles/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_articles_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_articles_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_articles_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_articles_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_articles_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_articles_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/business-analytics-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/business-analytics-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/business-analytics-mis/data-driven-decision-making/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/business-analytics-mis/data-driven-decision-making/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.74%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_data-driven-decision-making_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/business-analytics-mis/future-of-artificial-intelligence/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/business-analytics-mis/future-of-artificial-intelligence/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_future-of-artificial-intelligence_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/business-analytics-mis/leverage-programming-languages/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/business-analytics-mis/leverage-programming-languages/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_business-analytics-mis_leverage-programming-languages_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/competitive-advantages-business-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/competitive-advantages-business-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.84%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_competitive-advantages-business-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/gain-a-competitive-advantage-using-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/gain-a-competitive-advantage-using-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.65%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_gain-a-competitive-advantage-using-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/information-systems-and-supply-chain/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/information-systems-and-supply-chain/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.90%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_information-systems-and-supply-chain_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/managing-information-optimize-supply-chain/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/managing-information-optimize-supply-chain/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.81%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_managing-information-optimize-supply-chain_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/general-mis/what-jobs-ms-mis-degree/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/general-mis/what-jobs-ms-mis-degree/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>99.92%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_general-mis_what-jobs-ms-mis-degree_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/it-project-management-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/it-project-management-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/it-project-management-mis/impact-of-artificial-intelligence/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/it-project-management-mis/impact-of-artificial-intelligence/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_impact-of-artificial-intelligence_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/it-project-management-mis/it-risk-project-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/it-project-management-mis/it-risk-project-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_it-project-management-mis_it-risk-project-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/process-management-mis/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/process-management-mis/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/process-management-mis/digital-transformation-in-business-process-management/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/process-management-mis/digital-transformation-in-business-process-management/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_digital-transformation-in-business-process-management_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/degrees/technology/masters-management-information-systems/process-management-mis/purpose-and-value-of-process-mining/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/degrees/technology/masters-management-information-systems/process-management-mis/purpose-and-value-of-process-mining/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" target="_blank"><img src="screenshots/Desktop/staging/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" target="_blank"><img src="screenshots/Desktop/prod/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" target="_blank"><img src="screenshots/Desktop/diff/_degrees_technology_masters-management-information-systems_process-management-mis_purpose-and-value-of-process-mining_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/online-experience/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/online-experience/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_online-experience_.png" target="_blank"><img src="screenshots/Desktop/staging/_online-experience_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_online-experience_.png" target="_blank"><img src="screenshots/Desktop/prod/_online-experience_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_online-experience_.png" target="_blank"><img src="screenshots/Desktop/diff/_online-experience_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/student-services/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/student-services/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_student-services_.png" target="_blank"><img src="screenshots/Desktop/staging/_student-services_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_student-services_.png" target="_blank"><img src="screenshots/Desktop/prod/_student-services_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_student-services_.png" target="_blank"><img src="screenshots/Desktop/diff/_student-services_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <a href="https://live-web-uis.pantheonsite.io/tuition/" target="_blank" class="staging">Staging</a> |
+          <a href="https://onlinecbm.uis.edu/tuition/" target="_blank" class="prod">Prod</a>
+        </td>
+        <td>100.00%</td>
+        <td class="pass">Pass</td>
+        <td>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/staging/_tuition_.png" target="_blank"><img src="screenshots/Desktop/staging/_tuition_.png" alt="Staging Thumbnail" /></a>
+                   <div class="thumbnail-label">Staging</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/prod/_tuition_.png" target="_blank"><img src="screenshots/Desktop/prod/_tuition_.png" alt="Prod Thumbnail" /></a>
+                   <div class="thumbnail-label">Prod</div>
+          </div>
+          <div class="thumbnail-wrapper">
+            <a href="screenshots/Desktop/diff/_tuition_.png" target="_blank"><img src="screenshots/Desktop/diff/_tuition_.png" alt="Diff Thumbnail" /></a>
+                   <div class="thumbnail-label">Diff</div>
+          </div>
+        </td>
       </tr>
     
         </tbody>
